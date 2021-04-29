@@ -24,4 +24,18 @@ for(i=0;i<=n;i++){for(j=n;j>=0;j--){
     }
 }
 
+//full code
+const n = 3;
+for(let i=0;i<=n;i++){
+    for(let j=n;j>=0;j--){
+        if(i==0&&j==n){
+          console.log("   ".repeat(n)+'__')
+        }
+        else if(i+j==n){
+          console.log("   ".repeat(n-i)+ '__|')
+        }
+    }
+}
+
 //=> 100% unit tests
+

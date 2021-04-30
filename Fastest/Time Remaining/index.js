@@ -30,3 +30,24 @@ if(Number(S[1])-Number(C[1])<0){
 console.log(D.join(':'));
 
 //Pass 100% unit tests
+//Solution 2
+var inputs = readline().split(' ')
+let c = inputs[0]
+let s = inputs[1]
+
+c = c.split(':')
+s = s.split(':')
+
+let h = Number(s[0]) - Number(c[0])
+
+let m = Number(s[1]) - Number(c[1])
+
+if (m<0) {
+    h=h-1
+    m = 60+m
+}
+
+if (m < 10) {
+    m = '0' + m
+}
+console.log(h + ':' + m)

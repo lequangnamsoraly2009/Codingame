@@ -1,0 +1,22 @@
+// Tìm số nằm giữa 3 số với số lượng dãy là N
+
+// Input 
+// 5
+// 1 2 3
+// 4 2 5
+// 7 1 9
+// 4 0 -1
+// -2 5 1
+
+// Output
+// 1 
+// 4
+// 7
+// 0
+// 1
+
+//Solution
+
+N=+readline();a=[];for(i=0;i<N;i++) {s=readline().split(' ');X=+s[0];Y=+s[1];Z=+s[2];a.push(X,Y,Z);a.sort((x,y)=>x-y); print(a[1]);a.splice(0,3)}
+
+// Pass 100% unit tests

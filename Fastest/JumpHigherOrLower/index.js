@@ -26,6 +26,7 @@ for (let i = 0; i < N; i++) {
     arr.push(H);
 }
 
+
 for(let j=0;j<arr.length-1;j++){
     for(let i=j+1;i<j+2;i++){
         if(arr[j]<arr[i]){
